@@ -7,5 +7,8 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
   use 'wbthomason/packer.nvim'
+  -- color themes
+  use 'gruvbox-community/gruvbox'
   use 'Mofiqul/dracula.nvim'
+  use { "catppuccin/nvim", as = "catppuccin" }
 end)
