@@ -19,3 +19,4 @@ telescope.setup({
 nnoremap("<leader>ff", "<cmd>Telescope find_files<CR>");
 nnoremap("<leader>fs", "<cmd>Telescope live_grep<CR>");
 nnoremap("<leader>fc", "<cmd>Telescope grep_string<CR>");
+
