@@ -1,4 +1,5 @@
 require("pranv.set")
 require("pranv.remap")
 require("pranv.command")
+require("pranv.neogit")
 print("hello from pranv")
