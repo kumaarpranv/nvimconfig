@@ -4,7 +4,16 @@ local lspconfig = require("lspconfig")
 local cmp_nvim_lsp = require("cmp_nvim_lsp")
 local nnoremap = require('pranv.keymap').nnoremap
 local keymap = vim.keymap -- for conciseness
- 
+
+-- virtual text disable
+vim.diagnostic.config({
+  virtual_text = false
+})
+
+-- Show line diagnostics automatically in hover window
+vim.o.updatetime = 250
+vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
+
 -- enable keybinds only for when lsp server available
 local on_attach = function(client, bufnr)
   -- keybind options
