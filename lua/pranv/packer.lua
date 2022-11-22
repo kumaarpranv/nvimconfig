@@ -27,7 +27,6 @@ return require('packer').startup(function(use)
   use("L3MON4D3/LuaSnip") -- snippet engine
   use("saadparwaiz1/cmp_luasnip") -- for autocompletion
   use("rafamadriz/friendly-snippets") -- useful snippets
-
   -- color themes
   use 'gruvbox-community/gruvbox'
   use 'Mofiqul/dracula.nvim'
@@ -40,4 +39,5 @@ return require('packer').startup(function(use)
   use 'nvim-lualine/lualine.nvim'
   -- fuzzy finding w/ telescope
   use 'nvim-telescope/telescope.nvim' -- fuzzy finder
+  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
 end)

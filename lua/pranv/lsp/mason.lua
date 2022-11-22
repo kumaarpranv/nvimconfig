@@ -7,10 +7,10 @@ mason.setup()
 mason_lspconfig.setup({
   -- list of servers for mason to install
   ensure_installed = {
-    "tsserver",
+    "rust_analyzer",
     "jedi_language_server",
+    "gopls",
     "html",
-    "sumneko_lua",
     "emmet_ls",
   },
   -- auto-install configured servers (with lspconfig)
