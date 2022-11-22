@@ -1,8 +1,5 @@
 -- import lspsaga safely
 local saga = require("lspsaga")
-if not saga_status then
-  return
-end
 
 saga.init_lsp_saga({
   -- keybinds for navigation in lspsaga window
