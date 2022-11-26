@@ -10,7 +10,7 @@ toggleterm.setup({
     start_in_insert = true,
     insert_mappings = true,
     terminal_mappings = true,
-    shell = "powershell",
+    shell = vim.o.shell,
     close_on_exit = true,
 })
 
