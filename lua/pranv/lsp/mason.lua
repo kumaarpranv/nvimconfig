@@ -10,6 +10,7 @@ mason_lspconfig.setup({
     "rust_analyzer",
     "jedi_language_server",
     "gopls",
+    "svelte",
     "html",
     "emmet_ls",
     "clangd",
