@@ -1,6 +1,6 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
--- Only required if you have packer configured as `opt`
+-- Only required if you have acker configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
@@ -52,4 +52,7 @@ return require('packer').startup(function(use)
     
   -- git
   use { 'lewis6991/gitsigns.nvim' }
+  
+  -- motions
+  use { 'justinmk/vim-sneak' }
 end)
