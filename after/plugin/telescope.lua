@@ -1,6 +1,5 @@
 local telescope = require("telescope")
 local actions = require("telescope.actions")
-local nnoremap = require('pranv.keymap').nnoremap
 
 -- configure telescope
 telescope.setup({
@@ -16,7 +15,7 @@ telescope.setup({
   },
 })
 telescope.load_extension("fzf")
-nnoremap("<leader>ff", "<cmd>Telescope find_files<CR>");
-nnoremap("<leader>fs", "<cmd>Telescope live_grep<CR>");
-nnoremap("<leader>fc", "<cmd>Telescope grep_string<CR>");
+vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>");
+vim.keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<CR>");
+vim.keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<CR>");
 

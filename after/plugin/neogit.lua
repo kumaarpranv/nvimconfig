@@ -3,8 +3,8 @@ local nnoremap = require('pranv.keymap').nnoremap
 
 neogit.setup {}
 
-nnoremap("<leader>gs", function()
+vim.keymap.set("n", "<leader>gs", function()
     neogit.open({ })
 end);
 
-nnoremap("<leader>ga", "<cmd>!git fetch --all<CR>");
+vim.keymap.set("n", "<leader>ga", "<cmd>!git fetch --all<CR>");
