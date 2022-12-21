@@ -11,6 +11,7 @@ return require('packer').startup(function(use)
   --utils
   use 'nvim-lua/plenary.nvim'
   use 'ThePrimeagen/harpoon'
+  use 'mbbill/undotree'
   
   -- lsp
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
@@ -55,6 +56,7 @@ return require('packer').startup(function(use)
     
   -- git
   use { 'lewis6991/gitsigns.nvim' }
+  use { 'tpope/vim-fugitive' }
   
   -- motions
   use { 'justinmk/vim-sneak' }
