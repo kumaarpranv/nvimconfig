@@ -1,5 +1,4 @@
 local neogit = require('neogit')
-local nnoremap = require('pranv.keymap').nnoremap
 
 neogit.setup {}
 
