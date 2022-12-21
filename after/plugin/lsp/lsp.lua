@@ -7,6 +7,7 @@ lsp.ensure_installed({
   'jedi_language_server',
   'gopls',
   'clangd',
+  'svelte',
   'sumneko_lua',
   'rust_analyzer',
 })
