@@ -10,6 +10,9 @@ lsp.ensure_installed({
   'svelte',
   'sumneko_lua',
   'rust_analyzer',
+  'tailwindcss',
+  'tsserver',
+  'eslint'
 })
 
 -- Fix Undefined global 'vim'
