@@ -1,4 +1,5 @@
 local lsp = require('lsp-zero')
+local null_ls = require('null-ls')
 
 lsp.preset('recommended')
 lsp.ensure_installed({
@@ -76,6 +77,14 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.setup()
+
+local mason_nullls = require("mason-null-ls")
+mason_nullls.setup({
+  automatic_installation = true,
+  automatic_setup = true,
+  ensure_installed = {"black"}
+})
+mason_nullls.setup_handlers({})
 
 vim.diagnostic.config({
     virtual_text = true,
