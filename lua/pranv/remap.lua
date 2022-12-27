@@ -20,3 +20,9 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>sc", [[:s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("v", "<leader>sv", [[:s/\%V\old/new/gI]])
+
+vim.keymap.set("n", "<leader>gd", "<cmd>DiffviewOpen<CR>")
+vim.keymap.set("n", "<leader>gdd", "<cmd>DiffviewFileHistory<CR>")
+vim.keymap.set("n", "<leader>gde", "<cmd>DiffviewClose<CR>")
+
+

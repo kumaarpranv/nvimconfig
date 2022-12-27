@@ -76,6 +76,7 @@ return require('packer').startup(function(use)
   -- git
   use { 'lewis6991/gitsigns.nvim' }
   use { 'tpope/vim-fugitive' }
+  use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
 
   -- motions
   use { 'justinmk/vim-sneak' }
