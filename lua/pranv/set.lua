@@ -32,4 +32,4 @@ vim.opt.colorcolumn = "80"
 vim.opt.wrap = false
 vim.g.mapleader = " "
 
-vim.opt.clipboard = 'unnamedplus'
+-- vim.opt.clipboard = 'unnamedplus'
