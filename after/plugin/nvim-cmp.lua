@@ -1,8 +1,14 @@
 -- import nvim-cmp plugin safely
-local cmp = require("cmp")
+local cmp_ok, cmp = pcall(require, "cmp")
+if not cmp_ok then
+  return
+end
 
 -- import luasnip plugin safely
-local luasnip = require("luasnip")
+local luasnip_ok, luasnip = pcall(require, "luasnip")
+if not luasnip_ok then
+    return
+end
 
 -- load vs-code like snippets from plugins (e.g. friendly-snippets)
 require("luasnip/loaders/from_vscode").lazy_load()

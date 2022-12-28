@@ -1,5 +1,7 @@
-local lualine = require 'lualine'
-
+local ok, lualine = pcall(require, "lualine")
+if not ok then
+  return
+end
 -- get lualine nightfly theme
 local lualine_nightfly = require("lualine.themes.nightfly")
 

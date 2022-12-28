@@ -1,6 +1,12 @@
 -- require 'nvim-treesitter.install'.compilers = { "clang" }
+local ok, nvim_treesitter = pcall(require, "nvim-treesitter")
+if not ok then
+  return
+end
 
-require'nvim-treesitter.configs'.setup {
+nvim_treesitter.setup({})
+
+require 'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
   ensure_installed = { "help", "javascript", "typescript", "python", "go", "c", "lua", "rust" },
 

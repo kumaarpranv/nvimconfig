@@ -1,5 +1,14 @@
-local lsp = require('lsp-zero')
-local null_ls = require('null-ls')
+local lsp_ok, lsp = pcall(require, "lsp-zero")
+if not lsp_ok then
+  return
+end
+
+local null_ok, null_ls = pcall(require, "null-ls")
+if not null_ok then
+  return
+end
+
+null_ls.setup({})
 
 lsp.preset('recommended')
 lsp.ensure_installed({
