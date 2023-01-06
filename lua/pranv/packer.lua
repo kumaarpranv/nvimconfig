@@ -41,15 +41,11 @@ return require('packer').startup(function(use)
   use({ "glepnir/lspsaga.nvim", branch = "main" }) -- enhanced lsp uis
   use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 
-  -- code completion
-  use("hrsh7th/nvim-cmp") -- completion plugin
-  use("hrsh7th/cmp-buffer") -- source for text in buffer
-  use("hrsh7th/cmp-path") -- source for file system paths
-
-  -- snippets
-  use("L3MON4D3/LuaSnip") -- snippet engine
-  use("saadparwaiz1/cmp_luasnip") -- for autocompletion
-  use("rafamadriz/friendly-snippets") -- useful snippets
+  -- dap
+  use 'mfussenegger/nvim-dap'
+  use 'mfussenegger/nvim-dap-python'
+  use 'leoluz/nvim-dap-go'
+  use 'rcarriga/nvim-dap-ui'
 
   -- color themes
   use 'gruvbox-community/gruvbox'
@@ -78,5 +74,5 @@ return require('packer').startup(function(use)
   use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
 
   -- motions
-  use { 'justinmk/vim-sneak' }
+  use { 'ggandor/leap.nvim' }
 end)
