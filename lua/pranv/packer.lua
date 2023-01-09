@@ -26,6 +26,7 @@ return require('packer').startup(function(use)
 
   -- lsp
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
+  use { 'stevearc/aerial.nvim' }
   use 'nvim-treesitter/playground'
   use {
     'VonHeikemen/lsp-zero.nvim',
