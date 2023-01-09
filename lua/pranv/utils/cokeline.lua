@@ -5,8 +5,8 @@ end
 
 cokeline.setup()
 
-vim.keymap.set('n', '<leader>tp', ":bprevious<CR>")
-vim.keymap.set('n', '<leader>tc', ":bdelete<CR>")
-vim.keymap.set('n', '<leader>tn', ":bnext<CR>")
-vim.keymap.set('n', '<leader>tf', ":bfirst<CR>")
-vim.keymap.set('n', '<leader>tl', ":blast<CR>")
+vim.keymap.set('n', 'tp', ":bprevious<CR>")
+vim.keymap.set('n', 'tc', ":bdelete<CR>")
+vim.keymap.set('n', 'tn', ":bnext<CR>")
+vim.keymap.set('n', 'tf', ":bfirst<CR>")
+vim.keymap.set('n', 'tl', ":blast<CR>")
