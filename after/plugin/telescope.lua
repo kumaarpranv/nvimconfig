@@ -22,4 +22,5 @@ telescope.load_extension("fzf")
 vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>");
 vim.keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<CR>");
 vim.keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<CR>");
+vim.keymap.set("n", "<leader>fk", "<cmd>Telescope keymaps<CR>");
 
