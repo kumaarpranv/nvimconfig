@@ -53,7 +53,7 @@ return require('packer').startup(function(use)
   use { "catppuccin/nvim", as = "catppuccin" }
 
   -- explorer
-  use 'nvim-tree/nvim-tree.lua'
+  -- use 'nvim-tree/nvim-tree.lua'
 
   -- icons
   use 'nvim-tree/nvim-web-devicons'
