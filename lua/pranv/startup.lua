@@ -1,6 +1,9 @@
+vim.opt.termguicolors = true
+
 local ok, _ = pcall(require, "impatient")
-local ok_coke, cokeline = pcall(require, "cokeline")
-if (not ok) or (not ok_coke) then
+if not ok then
   return
 end
-cokeline.setup()
+
+require('pranv.utils.cokeline')
+
