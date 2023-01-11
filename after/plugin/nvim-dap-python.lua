@@ -4,10 +4,10 @@ if (not ok) or (not ok_dap) then
   return
 end
 local python_path = ""
-if vim.fn.has('win32') then
-  python_path = "C:\\Users\\kumaa\\miniconda3\\python.exe"
+if vim.fn.has('unix') then
+  python_path = "/home/anaconda3/bin/python"
 else
-  python_path = ""
+  python_path = "C:\\Users\\kumaa\\miniconda3\\python.exe"
 end
 dap.configurations.python = {
   {
