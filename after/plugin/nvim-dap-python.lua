@@ -4,7 +4,7 @@ if (not ok) or (not ok_dap) then
   return
 end
 local python_path = ""
-if vim.fn.has('unix') then
+if vim.loop.os_uname().sysname == 'Linux' then
   python_path = "/home/anaconda3/bin/python"
 else
   python_path = "C:\\Users\\kumaa\\miniconda3\\python.exe"
